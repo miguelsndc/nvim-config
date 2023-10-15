@@ -1,6 +1,9 @@
 {
   "extras": [
-
+    "lazyvim.plugins.extras.editor.leap",
+    "lazyvim.plugins.extras.editor.mini-files",
+    "lazyvim.plugins.extras.editor.symbols-outline",
+    "lazyvim.plugins.extras.formatting.prettier"
   ],
   "news": {
     "NEWS.md": "2191"
