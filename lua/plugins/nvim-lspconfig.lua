@@ -2,10 +2,11 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
+      pyright = {},
       cssls = {},
       html = {},
       tsserver = {
-        filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+        filetypes = { "javascript", "typescript", "typescriptreact", "typescript.tsx" },
         cmd = { "typescript-language-server", "--stdio" },
       },
     },
