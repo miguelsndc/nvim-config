@@ -23,7 +23,7 @@ return {
         "<leader>th",
         function()
           local count = vim.v.count1
-          require("toggleterm").toggle(count, 15, Util.root.get(), "horizontal")
+          require("toggleterm").toggle(count, 10, Util.root.get(), "horizontal")
         end,
         desc = "ToggleTerm (horizontal root_dir)",
       },
@@ -64,7 +64,7 @@ return {
       -- size can be a number or function which is passed the current terminal
       size = function(term)
         if term.direction == "horizontal" then
-          return 15
+          return 7
         elseif term.direction == "vertical" then
           return vim.o.columns * 0.4
         end
@@ -86,7 +86,7 @@ return {
       direction = "horizontal" or "vertical" or "window" or "float",
       -- direction = "vertical",
       close_on_exit = true, -- close the terminal window when the process exits
-      -- shell = vim.o.shell, -- change the default shell
+      --      shell = 'C:\\"Program Files"\\Git\\bin\\bash.exe', -- change the default shell
       -- This field is only relevant if direction is set to 'float'
       -- float_opts = {
       --   -- The border key is *almost* the same as 'nvim_open_win'
